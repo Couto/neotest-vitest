@@ -159,8 +159,8 @@ local function getVitestConfig(path)
     return nil
   end
 
-  local vitestJs = util.path.join(rootPath, "vitest.config.js")
-  local vitestTs = util.path.join(rootPath, "vitest.config.ts")
+  local vitestJs = util.path.join(rootPath, "vitest.config.mjs")
+  local vitestTs = util.path.join(rootPath, "vitest.config.mts")
 
   if util.path.exists(vitestTs) then
     return vitestTs
